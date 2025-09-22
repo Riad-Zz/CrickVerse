@@ -5,7 +5,7 @@ import Coin from '../../assets/coin.png'
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar max-w-11/12 mx-auto mt-2 mb-6">
+            <div className="navbar max-w-10/12 mx-auto mt-2 mb-6">
                 <div className="flex-1">
                     <img src={Logo} alt="Crickverse Logo" className='h-12  md:h-auto w-auto' />
                 </div>

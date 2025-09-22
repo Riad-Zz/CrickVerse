@@ -28,23 +28,11 @@
       "stars": 5,
       "price": 1000000,
       "legend": false,
-      "photo": null
+      "photo": "https://i.ibb.co.com/8L3HFHTg/kohlii-chokaa-maarna-ayy-kohli.jpg",
+      "flag": "https://flagcdn.com/w40/in.png"
     },
     {
       "id": 2,
-      "name": "Sachin Tendulkar",
-      "country": "India",
-      "role": "batsman",
-      "rating": 98,
-      "battingStyle": "Right-hand",
-      "bowlingStyle": null,
-      "stars": 5,
-      "price": 1000000,
-      "legend": true,
-      "photo": null
-    },
-    {
-      "id": 3,
       "name": "AB de Villiers",
       "country": "South Africa",
       "role": "batsman",
@@ -54,49 +42,11 @@
       "stars": 5,
       "price": 1000000,
       "legend": true,
-      "photo": null
+      "photo": "https://i.ibb.co.com/4R4zy8bx/download.jpg",
+      "flag": "https://flagcdn.com/w40/za.png"
     },
     {
-      "id": 4,
-      "name": "Rohit Sharma",
-      "country": "India",
-      "role": "batsman",
-      "rating": 92,
-      "battingStyle": "Right-hand",
-      "bowlingStyle": "Right-arm off break",
-      "stars": 4,
-      "price": 500000,
-      "legend": false,
-      "photo": null
-    },
-    {
-      "id": 5,
-      "name": "MS Dhoni",
-      "country": "India",
-      "role": "wicketkeeper",
-      "rating": 94,
-      "battingStyle": "Right-hand",
-      "bowlingStyle": null,
-      "stars": 4,
-      "price": 500000,
-      "legend": true,
-      "photo": null
-    },
-    {
-      "id": 6,
-      "name": "Ben Stokes",
-      "country": "England",
-      "role": "allrounder",
-      "rating": 94,
-      "battingStyle": "Right-hand",
-      "bowlingStyle": "Right-arm medium fast",
-      "stars": 4,
-      "price": 500000,
-      "legend": false,
-      "photo": null
-    },
-    {
-      "id": 7,
+      "id": 3,
       "name": "Babar Azam",
       "country": "Pakistan",
       "role": "batsman",
@@ -106,23 +56,53 @@
       "stars": 4,
       "price": 500000,
       "legend": false,
-      "photo": null
+      "photo": "https://i.ibb.co.com/sv83ZzGR/download-2.jpg",
+      "flag": "https://flagcdn.com/w40/pk.png"
     },
     {
-      "id": 8,
-      "name": "Jasprit Bumrah",
+      "id": 4,
+      "name": "Sachin Tendulkar",
       "country": "India",
-      "role": "bowler",
-      "rating": 91,
+      "role": "batsman",
+      "rating": 98,
       "battingStyle": "Right-hand",
-      "bowlingStyle": "Right-arm fast",
+      "bowlingStyle": null,
+      "stars": 5,
+      "price": 1000000,
+      "legend": true,
+      "photo": "https://i.ibb.co.com/spRDg5MT/sachin-tendulkar-Google-Search.jpg",
+      "flag": "https://flagcdn.com/w40/in.png"
+    },
+    {
+      "id": 5,
+      "name": "Ben Stokes",
+      "country": "England",
+      "role": "allrounder",
+      "rating": 94,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": "Right-arm medium fast",
       "stars": 4,
       "price": 500000,
       "legend": false,
-      "photo": null
+      "photo": "https://i.ibb.co.com/LhpssWq3/Ben-Stokes-gets-my-vote-for-BBC-Sports-Personality-of-the-Year.jpg",
+      "flag": "https://flagcdn.com/w40/gb.png"
     },
     {
-      "id": 9,
+      "id": 6,
+      "name": "MS Dhoni",
+      "country": "India",
+      "role": "wicketkeeper",
+      "rating": 94,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": null,
+      "stars": 4,
+      "price": 500000,
+      "legend": true,
+      "photo": "https://i.ibb.co.com/C323zHN6/download-1.jpg",
+      "flag": "https://flagcdn.com/w40/in.png"
+    },
+    {
+      "id": 7,
       "name": "Shakib Al Hasan",
       "country": "Bangladesh",
       "role": "allrounder",
@@ -132,7 +112,36 @@
       "stars": 4,
       "price": 500000,
       "legend": false,
-      "photo": null
+      "photo": "https://i.ibb.co.com/wNsrDML0/Shakib-Al-Hasan.jpg",
+      "flag": "https://flagcdn.com/w40/bd.png"
+    },
+    {
+      "id": 8,
+      "name": "Rohit Sharma",
+      "country": "India",
+      "role": "batsman",
+      "rating": 92,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": "Right-arm off break",
+      "stars": 4,
+      "price": 500000,
+      "legend": false,
+      "photo": "https://i.ibb.co.com/dw1K5kXM/ICC-Cricket-World-Cup-2023-Rohit-Sharma-pleased-to-achieve-first-goal-of-qualifying-for-s.jpg",
+      "flag": "https://flagcdn.com/w40/in.png"
+    },
+    {
+      "id": 9,
+      "name": "Jasprit Bumrah",
+      "country": "India",
+      "role": "bowler",
+      "rating": 91,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": "Right-arm fast",
+      "stars": 4,
+      "price": 500000,
+      "legend": false,
+      "photo": "https://i.ibb.co.com/ZzT092hN/Jasprit-BHUMRAH-PC-Wallpaper-Hd.jpg",
+      "flag": "https://flagcdn.com/w40/in.png"
     },
     {
       "id": 10,
@@ -145,7 +154,8 @@
       "stars": 3,
       "price": 200000,
       "legend": false,
-      "photo": null
+      "photo": "https://i.ibb.co.com/5Wzbg9cV/Maxwell-Blazes-Century-Equals-Rohit-Sharma-s-T20-I-Record.jpg",
+      "flag": "https://flagcdn.com/w40/au.png"
     },
     {
       "id": 11,
@@ -158,7 +168,8 @@
       "stars": 3,
       "price": 200000,
       "legend": false,
-      "photo": null
+      "photo": "https://i.ibb.co.com/JjbHQhmS/Chris-Gayle-Chris-Gayle-who-has-set-a-special-record-for-no-one-in-T20-cricket-history.jpg",
+      "flag": "https://flagcdn.com/w40/jm.png"
     },
     {
       "id": 12,
@@ -171,7 +182,8 @@
       "stars": 4,
       "price": 500000,
       "legend": false,
-      "photo": null
+      "photo": "https://i.ibb.co.com/XZGMvnpw/Rashid-Khan-Family-Wife-Kids-Age-Net-Worth-Height-Nationality.jpg",
+      "flag": "https://flagcdn.com/w40/af.png"
     }
   ]
 }
