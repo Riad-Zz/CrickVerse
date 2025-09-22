@@ -7,7 +7,7 @@ const Navbar = () => {
         <div>
             <div className="navbar max-w-11/12 mx-auto mt-2 mb-6">
                 <div className="flex-1">
-                    <img src={Logo} alt="Crickverse Logo" className='h-12 w-12 md:h-auto w-auto' />
+                    <img src={Logo} alt="Crickverse Logo" className='h-12  md:h-auto w-auto' />
                 </div>
                 <div>
                     <div className='flex gap-12 items-center'>
