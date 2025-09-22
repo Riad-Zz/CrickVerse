@@ -1,0 +1,177 @@
+{
+  "rules": {
+    "teamSize": 11,
+    "budgetCoins": 5000000,
+    "minByRole": {
+      "wicketkeeper": 1,
+      "batsman": 3,
+      "bowler": 3,
+      "allrounder": 1
+    },
+    "maxPlayersFromOneCountry": 7,
+    "maxFiveStarPlayers": 3,
+    "starPrice": {
+      "5": 1000000,
+      "4": 500000,
+      "3": 200000
+    }
+  },
+  "players": [
+    {
+      "id": 1,
+      "name": "Virat Kohli",
+      "country": "India",
+      "role": "batsman",
+      "rating": 95,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": "Right-arm medium",
+      "stars": 5,
+      "price": 1000000,
+      "legend": false,
+      "photo": null
+    },
+    {
+      "id": 2,
+      "name": "Sachin Tendulkar",
+      "country": "India",
+      "role": "batsman",
+      "rating": 98,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": null,
+      "stars": 5,
+      "price": 1000000,
+      "legend": true,
+      "photo": null
+    },
+    {
+      "id": 3,
+      "name": "AB de Villiers",
+      "country": "South Africa",
+      "role": "batsman",
+      "rating": 96,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": null,
+      "stars": 5,
+      "price": 1000000,
+      "legend": true,
+      "photo": null
+    },
+    {
+      "id": 4,
+      "name": "Rohit Sharma",
+      "country": "India",
+      "role": "batsman",
+      "rating": 92,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": "Right-arm off break",
+      "stars": 4,
+      "price": 500000,
+      "legend": false,
+      "photo": null
+    },
+    {
+      "id": 5,
+      "name": "MS Dhoni",
+      "country": "India",
+      "role": "wicketkeeper",
+      "rating": 94,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": null,
+      "stars": 4,
+      "price": 500000,
+      "legend": true,
+      "photo": null
+    },
+    {
+      "id": 6,
+      "name": "Ben Stokes",
+      "country": "England",
+      "role": "allrounder",
+      "rating": 94,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": "Right-arm medium fast",
+      "stars": 4,
+      "price": 500000,
+      "legend": false,
+      "photo": null
+    },
+    {
+      "id": 7,
+      "name": "Babar Azam",
+      "country": "Pakistan",
+      "role": "batsman",
+      "rating": 93,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": null,
+      "stars": 4,
+      "price": 500000,
+      "legend": false,
+      "photo": null
+    },
+    {
+      "id": 8,
+      "name": "Jasprit Bumrah",
+      "country": "India",
+      "role": "bowler",
+      "rating": 91,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": "Right-arm fast",
+      "stars": 4,
+      "price": 500000,
+      "legend": false,
+      "photo": null
+    },
+    {
+      "id": 9,
+      "name": "Shakib Al Hasan",
+      "country": "Bangladesh",
+      "role": "allrounder",
+      "rating": 89,
+      "battingStyle": "Left-hand",
+      "bowlingStyle": "Left-arm spin",
+      "stars": 4,
+      "price": 500000,
+      "legend": false,
+      "photo": null
+    },
+    {
+      "id": 10,
+      "name": "Glenn Maxwell",
+      "country": "Australia",
+      "role": "allrounder",
+      "rating": 90,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": "Right-arm off spin",
+      "stars": 3,
+      "price": 200000,
+      "legend": false,
+      "photo": null
+    },
+    {
+      "id": 11,
+      "name": "Chris Gayle",
+      "country": "West Indies",
+      "role": "batsman",
+      "rating": 92,
+      "battingStyle": "Left-hand",
+      "bowlingStyle": null,
+      "stars": 3,
+      "price": 200000,
+      "legend": false,
+      "photo": null
+    },
+    {
+      "id": 12,
+      "name": "Rashid Khan",
+      "country": "Afghanistan",
+      "role": "bowler",
+      "rating": 90,
+      "battingStyle": "Right-hand",
+      "bowlingStyle": "Right-arm leg spin",
+      "stars": 4,
+      "price": 500000,
+      "legend": false,
+      "photo": null
+    }
+  ]
+}

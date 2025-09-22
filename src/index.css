@@ -1,2 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui"; 
+
+.font-sora{
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+}
