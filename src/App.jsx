@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import Footer from './Components/Footer/Footer';
 
 const playerFetch = async () => {
-  const res = await fetch('/players.json');
+  const res = await fetch(`${import.meta.env.BASE_URL}players.json`);
   return res.json();
 }
 
