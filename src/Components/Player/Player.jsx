@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import Virat from '../../assets/virat.jpg'
 import User from '../../assets/User.svg'
 import Flag from '../../assets/flag.svg'
@@ -6,11 +6,12 @@ import Flag from '../../assets/flag.svg'
 const Player = ({player,setCoin,coin,setPickedPlayer,pickedPlayer}) => {
     //legend -> bg-gradient-to-r from-gray-200 to-gray-50 border-2 border-amber-400 text-gray-900 rounded-xl p-4 shadow-md
     //
-    const [chosed,setChosed] = useState(false) ;
+    
+    const chosed = pickedPlayer.some(p => player.id === p.id)
     const handleChoosePlayer = ()=>{
         if(coin >= player.price){
             setCoin(coin - player.price) 
-            setChosed(true) ;
+            // setChosed(true) ;
             // setPickedPlayer(...pickedPlayer,player) 
             setPickedPlayer([...pickedPlayer,player]) ;
             

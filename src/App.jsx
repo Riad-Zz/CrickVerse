@@ -17,6 +17,12 @@ function App() {
   const [toggle, setToggle] = useState(true);
   const[coin,setCoin] = useState(5000000) ;
   const [pickedPlayer,setPickedPlayer] = useState([]) ;
+
+  const removeFunctionality = (player) =>{
+    const filteredPlayer = pickedPlayer.filter(p => player.name != p.name) ;
+    setPickedPlayer(filteredPlayer) ;
+    setCoin(coin + player.price) ;
+  }
   
   return (
     <>
@@ -39,7 +45,7 @@ function App() {
         toggle ? <Suspense fallback ={<div className='flex justify-center'><span className="loading loading-spinner text-warning"></span></div>}>
           <AvailablePlayer playerPromise={playerPromise} setCoin= {setCoin} coin = {coin} pickedPlayer = {pickedPlayer} setPickedPlayer = {setPickedPlayer}></AvailablePlayer>
         </Suspense>
-          : <SelectedPlayer pickedPlayer = {pickedPlayer}></SelectedPlayer>
+          : <SelectedPlayer pickedPlayer = {pickedPlayer} removeFunctionality={removeFunctionality} ></SelectedPlayer>
       }
 
 

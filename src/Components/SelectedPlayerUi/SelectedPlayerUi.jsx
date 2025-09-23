@@ -2,7 +2,7 @@ import React from 'react';
 import Virat from '../../assets/virat.jpg'
 import DelIcon from '../../assets/DeleteIcn.svg'
 
-const SelectedPlayerUi = ({Player}) => {
+const SelectedPlayerUi = ({Player,removeFunctionality}) => {
     return (
         <div className='max-w-10/12 mx-auto flex justify-between items-center border border-[#1313131a] rounded-xl p-4 mb-5'>
                     <div className='flex gap-6 items-center'>
@@ -15,7 +15,7 @@ const SelectedPlayerUi = ({Player}) => {
                         </div>
                     </div>
                     <div className='md:mr-5 cursor-pointer'>
-                        <img src={DelIcon} alt="" />
+                        <img src={DelIcon} alt="" onClick={()=>removeFunctionality(Player)} />
                     </div>
                 </div>
     );

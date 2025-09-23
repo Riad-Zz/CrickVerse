@@ -4,7 +4,7 @@ import DelIcon from '../../assets/DeleteIcn.svg'
 import SelectedPlayerUi from '../SelectedPlayerUi/SelectedPlayerUi';
 import Player from '../Player/Player';
 
-const SelectedPlayer = ({pickedPlayer}) => {
+const SelectedPlayer = ({pickedPlayer,removeFunctionality}) => {
     // console.log(pickedPlayer)
     return (
         <div>
@@ -12,7 +12,7 @@ const SelectedPlayer = ({pickedPlayer}) => {
             <SelectedPlayerUi></SelectedPlayerUi>
             <SelectedPlayerUi></SelectedPlayerUi> */}
             {
-                pickedPlayer.map(Player => <SelectedPlayerUi Player ={Player} ></SelectedPlayerUi>)
+                pickedPlayer.map(Player => <SelectedPlayerUi Player ={Player} removeFunctionality ={removeFunctionality} ></SelectedPlayerUi>)
             }
         </div>
     );
