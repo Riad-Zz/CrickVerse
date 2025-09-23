@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Virat from '../../assets/virat.jpg'
 import User from '../../assets/User.svg'
 import Flag from '../../assets/flag.svg'
 
-const Player = ({player}) => {
+const Player = ({player,setCoin,coin,setPickedPlayer,pickedPlayer}) => {
     //legend -> bg-gradient-to-r from-gray-200 to-gray-50 border-2 border-amber-400 text-gray-900 rounded-xl p-4 shadow-md
     //
+    const [chosed,setChosed] = useState(false) ;
+    const handleChoosePlayer = ()=>{
+        if(coin >= player.price){
+            setCoin(coin - player.price) 
+            setChosed(true) ;
+            // setPickedPlayer(...pickedPlayer,player) 
+            setPickedPlayer([...pickedPlayer,player]) ;
+            
+        }else{
+            alert("Not enough coin")
+        }
+    }
     return (
         <div className={` border-[#1313131a] bg-gradient-to-r from-gray-100 to-gray-50 border-2  text-gray-900 rounded-xl p-4 shadow-md shadow-indigo-100/60`}>
             <img src={player.photo} alt="" className='rounded-2xl md:h-[295px] w-full object-cover' /> 
@@ -33,7 +45,7 @@ const Player = ({player}) => {
             <div className='flex justify-between items-center my-3'>
                 <p className='font-bold'>Price $<span>{player.price}</span></p>
                 <div>
-                    <button className='btn rounded-[8px] bg-white'>Choose Player</button>
+                    <button disabled = {chosed}  onClick={()=>handleChoosePlayer()} className={`btn rounded-[8px] bg-white`}>Choose Player</button>
                 </div>
             </div>
         </div>

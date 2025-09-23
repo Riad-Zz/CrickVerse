@@ -10,17 +10,19 @@ const playerFetch = async () => {
   return res.json();
 }
 
+const playerPromise = playerFetch();
 
 function App() {
 
   const [toggle, setToggle] = useState(true);
-
-  const playerPromise = playerFetch();
+  const[coin,setCoin] = useState(5000000) ;
+  const [pickedPlayer,setPickedPlayer] = useState([]) ;
+  
   return (
     <>
 
       {/*------------Naviagtion Section--------------------*/}
-      <Navbar></Navbar>
+      <Navbar coin ={coin}></Navbar>
       {/*-------------Banner Section----------------------*/}
       <Banner></Banner>
       {/* Avaiable and Selcted Player Toggler  */}
@@ -28,16 +30,16 @@ function App() {
         <div className='font-bold text-2xl'>{toggle ? "Available Players" : "Selected Players"}</div>
         <div className='flex justify-center mt-2 md:mt-0'>
           <button onClick={() => setToggle(true)} className={`btn ${toggle ? `bg-[#e7fe29]` : `bg-[]`} border-r-0 rounded-l-xl px-7 py-5`}>Available</button>
-          <button onClick={() => setToggle(false)} className={`btn border-l-0 ${!toggle ? `bg-[#e7fe29]` : `bg-[]`} rounded-r-xl px-7 py-5`}>Selected <span>(0)</span></button>
+          <button onClick={() => setToggle(false)} className={`btn border-l-0 ${!toggle ? `bg-[#e7fe29]` : `bg-[]`} rounded-r-xl px-7 py-5`}>Selected <span>({pickedPlayer.length})</span></button>
         </div>
       </div>
 
       {/* Available and Selected PLayer Cards  */}
       {
         toggle ? <Suspense fallback ={<div className='flex justify-center'><span className="loading loading-spinner text-warning"></span></div>}>
-          <AvailablePlayer playerPromise={playerPromise}></AvailablePlayer>
+          <AvailablePlayer playerPromise={playerPromise} setCoin= {setCoin} coin = {coin} pickedPlayer = {pickedPlayer} setPickedPlayer = {setPickedPlayer}></AvailablePlayer>
         </Suspense>
-          : <SelectedPlayer></SelectedPlayer>
+          : <SelectedPlayer pickedPlayer = {pickedPlayer}></SelectedPlayer>
       }
 
 

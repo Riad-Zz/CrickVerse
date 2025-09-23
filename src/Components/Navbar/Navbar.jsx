@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../../assets/logo.png'
 import Coin from '../../assets/coin.png'
 
-const Navbar = () => {
+const Navbar = ({coin}) => {
     return (
         <div>
             <div className="navbar max-w-10/12 mx-auto mt-2 mb-6">
@@ -29,7 +29,7 @@ const Navbar = () => {
 
                         <button className='btn px-5 py-4 bg-white rounded-xl'>
                             <div className='font-bold'>
-                                <span className='mr-1'>0</span>Coin
+                                <span className='mr-1'>{coin}</span>Coin
                             </div>
                             <img src={Coin} alt="" className='w-6 h-6' />
                         </button>
