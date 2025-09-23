@@ -2,6 +2,8 @@
 import Virat from '../../assets/virat.jpg'
 import User from '../../assets/User.svg'
 import Flag from '../../assets/flag.svg'
+// import { toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 const Player = ({player,setCoin,coin,setPickedPlayer,pickedPlayer}) => {
     //legend -> bg-gradient-to-r from-gray-200 to-gray-50 border-2 border-amber-400 text-gray-900 rounded-xl p-4 shadow-md
@@ -9,15 +11,20 @@ const Player = ({player,setCoin,coin,setPickedPlayer,pickedPlayer}) => {
     
     const chosed = pickedPlayer.some(p => player.id === p.id)
     const handleChoosePlayer = ()=>{
-        if(coin >= player.price){
-            setCoin(coin - player.price) 
+        if(coin < player.price){
+            toast("Not enough coin")
+            return ;       
             // setChosed(true) ;
             // setPickedPlayer(...pickedPlayer,player) 
-            setPickedPlayer([...pickedPlayer,player]) ;
-            
-        }else{
-            alert("Not enough coin")
         }
+        if(pickedPlayer.length === 6){
+            toast("Maximum Player Selected") ;
+            return ; 
+        }
+         setCoin(coin - player.price) 
+        setPickedPlayer([...pickedPlayer,player]) ;
+        
+
     }
     return (
         <div className={` border-[#1313131a] bg-gradient-to-r from-gray-100 to-gray-50 border-2  text-gray-900 rounded-xl p-4 shadow-md shadow-indigo-100/60`}>
